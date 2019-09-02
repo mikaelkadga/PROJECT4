@@ -22,19 +22,20 @@ class HomeScreen extends Component {
           contentContainerStyle={styles.contentContainer}>
           <View style={styles.welcomeContainer}>
             <Image
-              source={require('../assets/images/robot-dev.png')}
+              source={require('../assets/images/awal.png')}
               style={styles.welcomeImage}
+              style={{ width: 200, height: 140, alignSelf: 'center' }}
             />
           </View>
 
           <View style={styles.getStartedContainer}>
             <View
               style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText>screens/HomeScreen.js</MonoText>
+                
             </View>
 
             <Button
-              title="klik disini bangsat"
+              title="Start"
               onPress={() => this.props.navigation.navigate('BottomTab')}
             />
           </View>

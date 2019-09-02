@@ -14,15 +14,18 @@ class DetailsScreen extends Component {
         const id = this.props.navigation.getParam('id', 'id tidak ditemukan');
         const title = this.props.navigation.getParam('title', 'title tidak ditemukan');
         const content = this.props.navigation.getParam('content', 'content tidak ditemukan');
-        const photo = this.props.navigation.getParam('photo', 'photo tidak ditemukan');
+        const photoDetail = this.props.navigation.getParam('photoDetail', 'photo tidak ditemukan');
         return (
             <View style={[styles.container, styles.text]}>
-                <Text style={styles.header}>Details Screen</Text>
-                <Text style={styles.text}>ID : {id}</Text>
-                <Text>Title: {title}</Text>
-                <Text>Content: {content}</Text>
+                <Image
+                style={{ width: 70, height: 50, alignSelf: 'center' }}
+                source={require('../assets/images/awal.png')}
+                />
+                 <Text style={{ alignSelf: 'center', margin: 15, fontWeight: 'bold', fontSize: 18}}>{title}</Text>
                 {/* image bisa diklik */}
-                <ImageViewModal sumber={photo} style={{ alignSelf: 'center' }} />
+                <ImageViewModal sumber={photoDetail} style={{ alignSelf: 'center', width: 300, height: 300 }} />
+                <Text style={{ alignSelf: 'center', margin: 15, fontSize: 17}}>{content}</Text>
+                
             </View>
         );
     };
@@ -83,7 +86,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     text: {
-        fontSize: 16,
+        fontSize:70,
     }
 });
 

@@ -10,10 +10,10 @@ class ListScreen extends Component {
       <ScrollView style={styles.container}>
         <View style={{ justifyContent: 'center' }}>
           <Image
-            style={{ width: 50, height: 50, alignSelf: 'center' }}
-            source={{ uri: 'https://www.muraldecal.com/en/img/asmu170-jpg/folder/products-listado-merchanthover/stickers-nirvana-and-smiley-drunk-black.jpg' }}
+            style={{ width: 70, height: 50, alignSelf: 'center' }}
+            source={require('../assets/images/awal.png')}
           />
-          <Text style={{ fontSize: 20, fontWeight: 'bold', alignSelf: 'center' }}>Smells Like Teen Spirit</Text>
+          <Text style={{ fontSize: 17, fontWeight: 'bold', alignSelf: 'center', margin: 10 }}>The Universal Declaration Of Human Rights</Text>
         </View>
 
         <FlatList
@@ -26,12 +26,12 @@ class ListScreen extends Component {
                 id: item.id,
                 title: item.title,
                 content: item.content,
-                photo: item.photo,
+                photoDetail: item.photoDetail,
               });
 
             }}>
               <Left>
-                <Thumbnail square source={{ uri: 'https://townsquare.media/site/366/files/2013/09/Nirvana.jpg' }} />
+                <Thumbnail square source={item.photoList} />
               </Left>
               <Body>
                 <Text>{item.title}</Text>
