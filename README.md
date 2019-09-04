@@ -1,12 +1,13 @@
-# HumanRights
-Proyek 4 Kadga
+# APLIKAI INFORMASI HAK ASASI MANUSIA UNTUK ANAK-ANAK BERBASIS ANDROID
 
-1. Masuk ke folder proyek nya : 
-    cd HumanRights/
-2. Istall kebutuhan packagenya : 
-    sudo npm install
-3. Jalanin program dengan expo :
-    expo start
-4. Pilih button tunneling pada webserver expo yang muncul di browser
+1. Tampilan Awal
 
-5. Scan barcode. Pastikan telah menginstall Aplikasi Expo di android.
+   ![](./Awal.jpg)
+
+2. Tampilan Isi
+
+   ![](./Isi.jpg)
+
+3. Tampilan Utama
+
+   ![](./Utama.jpg)
